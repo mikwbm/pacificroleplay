@@ -56,17 +56,10 @@
     <div class="container">
         <h1>Welcome to Pacific Roleplay</h1>
         <p>Explore our community and start your roleplaying journey with us.</p>
-        <form action="admin_panel.php" method="post">
+        <form action="admin_login.php" method="post">
             <input type="text" name="admin_key" placeholder="Enter admin key">
             <input type="submit" value="Login">
         </form>
     </div>
-
-    <script>
-        document.getElementById('admin-link').addEventListener('click', function(event) {
-            event.preventDefault();
-            document.getElementById('admin-login').style.display = 'block';
-        });
-    </script>
 </body>
 </html>

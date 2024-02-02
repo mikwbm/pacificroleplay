@@ -3,88 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
+    <title>Welcome to Pacific Roleplay</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: url('https://media.discordapp.net/attachments/1143628752128065657/1202830795899928576/Add_a_heading_5.png?ex=65cee279&is=65bc6d79&hm=c7a755280c142cad175f7b177583f674786f62d8855d6acc3c16332eba24da9b&=&format=webp&quality=lossless&width=1289&height=683') no-repeat center center fixed;
+            background-image: url('https://media.discordapp.net/attachments/1143628752128065657/1202830795899928576/Add_a_heading_5.png?ex=65cee279&is=65bc6d79&hm=c7a755280c142cad175f7b177583f674786f62d8855d6acc3c16332eba24da9b&=&format=webp&quality=lossless&width=1289&height=683');
             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Prevent background from repeating */
+            background-attachment: fixed; /* Keep background fixed */
             color: #fff; /* Text color */
+            text-align: center;
         }
+
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
+            padding: 50px;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .header h1 {
+        h1 {
             font-size: 36px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
-        .header p {
+        p {
             font-size: 18px;
             margin-bottom: 30px;
         }
-        .floating-buttons {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 800px; /* Adjust as needed */
-}
-
-.button {
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    font-size: 18px;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    margin: 5px; /* Adjust as needed */
-    text-decoration: none;
-    transition: border-color 0.3s ease;
-    animation: rainbow-border 4s linear infinite;
-}
-
-        .button:hover {
-            color: #000;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
         }
-
-        @keyframes rainbow-border {
-            0% { border-color: #ff0000; }
-            16% { border-color: #ff8000; }
-            33% { border-color: #ffff00; }
-            50% { border-color: #00ff00; }
-            67% { border-color: #00ffff; }
-            84% { border-color: #0000ff; }
-            100% { border-color: #ff00ff; }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .admin-login {
+            display: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Admin Panel</h1>
-        </div>
-    </div>
-    <div class="floating-buttons">
-        <a href="#" class="button">CAD</a>
-        <a href="#" class="button">Dashboard</a>
-        <a href="#" class="button">Settings</a>
-        <a href="#" class="button">Discord</a>
-        <a href="#" class="button">Join Now</a>
+        <h1>Welcome to Pacific Roleplay</h1>
+        <p>Explore our community and start your roleplaying journey with us.</p>
+        <form action="admin_login.php" method="post">
+            <input type="text" name="admin_key" placeholder="Enter admin key">
+            <input type="submit" value="Login">
+        </form>
     </div>
 </body>
 </html>
