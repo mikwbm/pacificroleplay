@@ -10,6 +10,9 @@
             padding: 0;
             height: 100%;
             overflow: hidden;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
         }
 
         .video-background {
@@ -29,32 +32,62 @@
 
         .loading-content {
             position: absolute;
-            top: 50%;
+            top: 10%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             text-align: center;
-            color: #fff;
-            font-family: Arial, sans-serif;
             z-index: 1000;
         }
 
         .loading-content h1 {
             font-size: 36px;
+            margin-bottom: 20px;
         }
 
         .loading-content p {
             font-size: 18px;
         }
+
+        .staff-box {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .staff-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .staff-list li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="video-background">
-        <iframe width="1268" height="713" src="https://www.youtube.com/embed/L_6q62RLvSU?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1268" height="713" src="https://www.youtube.com/embed/L_6q62RLvSU?autoplay=1&controls=0&showinfo=0&autohide=1&mute=0&loop=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="loading-content">
         <h1>Pacific Roleplay</h1>
         <p>Loading...</p>
+    </div>
+
+    <div class="staff-box">
+        <h2>Staff Members</h2>
+        <ul class="staff-list">
+            <li>Staff Member 1</li>
+            <li>Staff Member 2</li>
+            <li>Staff Member 3</li>
+            <!-- Add more staff members as needed -->
+        </ul>
     </div>
 </body>
 </html>
